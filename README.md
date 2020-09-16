@@ -6,3 +6,6 @@ One board is capable of guarding 16S setup with no minimum requirements. I.e. a 
 Both OV and UV signals are AND loop where a single deviation causes disconnect of appropriate function. For example if in the course of a charge single cell would hit OV alarm, then charger would stop. 
 UV signal is wired directly and it is used to stop the car in case of undervoltage. For additional safety the UV loop is wired with pullup so if a cell would just die at zero volts. Then car would stop to protect the battery. 
 
+I had to make some modification to my R1 boards. It seems i wasnt carefull enough and i forgot to introduce some reference connections. I also made an error in placement of load transistor. Since i used P mosfet that has reverse diode now all current drains through diode....
+And of course i added two P-mos transistors to reverse signals from BMS chip to opto. Daisy chain signal still pulls 12V down to signal OV/UV event.
+Newest files are in LiPo_16Cell2.zip archive.
