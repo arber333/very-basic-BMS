@@ -8,4 +8,4 @@ UV signal is wired directly and it is used to stop the car in case of undervolta
 
 I had to make some modification to my R1 boards. It seems i wasnt carefull enough and i forgot to introduce some reference connections. I also made an error in placement of load transistor. Since i used P mosfet that has reverse diode now all current drains through diode....
 And of course i added two P-mos transistors to reverse signals from BMS chip to opto. Daisy chain signal still pulls 12V down to signal OV/UV event.
-Newest files are in LiPo_16Cell2.zip archive.
+Newest files are in LiPo_16Cell2.rar archive.
